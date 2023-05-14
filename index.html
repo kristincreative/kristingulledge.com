@@ -25,10 +25,20 @@
         background-color: #97ccd0;
         color: #fff;
         font-family: 'Raleway', sans-serif;
-        font-size: 28.8px;
+        font-size: 16px;
         font-weight: 100;
         margin: 0 6vw;
         transition: margin-top .8s ease-in-out, font-size .8s ease-in-out;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        animation: sizeFont .8s ease-in-out 0s 1 normal forwards;
+      }
+      @keyframes sizeFont {
+        from {
+          font-size: 16px;
+        }
+        to {
+          font-size: 28.8px;
+        }
       }
       a{
         color: #612c2c;
